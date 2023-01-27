@@ -1,0 +1,39 @@
+body {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  width: 100vw;
+}
+
+.App {
+  width :90vw;
+  max-width: 20rem;
+}
+
+#inp {
+  padding: 8px;
+  background-color:rgb(38, 78, 112);
+  border-radius: .5rem;
+}
+input {
+  width: 75%;
+}
+button{
+  width:4rem;
+}
+p {
+  text-align:start;
+  margin: 0;
+}
+div.quote {
+
+  background-color: darkslategray;
+  margin-top: .5rem;
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+div.quote div p{
+  text-align: right;
+}
