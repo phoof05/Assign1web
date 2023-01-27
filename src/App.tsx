@@ -39,7 +39,13 @@ export function App() {
   return (
     <div className="App">
       <div id='inp'>
-        <input type="text" placeholder='Search quotes' onChange={e => setQuery(e.target.value)}/>
+        <form onSubmit={e =>{
+          e.preventDefault();
+          setVis(false);
+          getQuotes(query);
+        }}>
+          <input type="text" placeholder='Search quotes' onChange={e => setQuery(e.target.value)}/>
+        </form>
         <button onClick={() => {
           setVis(false);
           getQuotes(query);
